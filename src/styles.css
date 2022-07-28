@@ -1,0 +1,61 @@
+.container--upload{
+  color: rgb(76, 76, 76);
+    background-color: rgb(157, 157, 255);
+    width: 50%;
+    padding: 1em;
+    border-radius: 2px;
+    box-shadow: 3px 7px 7px 0px rgba(0,0,0,0.35);
+    margin: 0 auto;
+}
+form{
+  justify-content: center;
+}
+h3{
+    margin: 1rem auto 0;
+    justify-content: center;
+    text-align: center;
+}
+progress{
+    width: 100%;
+}
+button{
+  color: rgb(76, 76, 76);
+  width: 30%;
+  margin: 1rem 0 0 35%;
+  cursor: pointer;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+.enabled:hover{
+    border: 1px solid rgb(123, 123, 123);
+}
+.disabled{
+  background-color: rgb(147, 147, 147);
+  border: solid 1px rgb(76, 76, 76);
+  cursor: auto;
+}
+.enabled{
+  background-color: rgb(252, 172, 255);
+}
+  .custom-file-input::-webkit-file-upload-button {
+    width: 0.1px;
+    height: 0.1px;
+      visibility: hidden;
+    }
+  .custom-file-input::before {
+    width: 50%;
+    content: 'Select some files';
+    display: inline-block;
+    background: rgb(252, 172, 255);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    cursor: pointer;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }

@@ -1,10 +1,18 @@
 ## Using Firebase Cloud Storage with React to Upload Files to Cloud
 
-### This repo shows how to create use firebase storage to upload and download files to cloud from a React web App
+### This repo shows how to create use firebase storage to upload and download files to cloud from a React 
 
-### Youtube Tutorial Link - https://youtu.be/mEf-6IUsTKs
+### FOR IT TO WORK CORRECTLY, IT IS NECESSARY TO CHANGE THE STORAGE RULES:
+            rules_version = '2';
+            service firebase.storage {
+            match /b/{bucket}/o {
+                match /{allPaths=**} {
+                allow read, write: if true;
+                }
+            }
+            }
 
-#### 📚 Materials/References:
+#### 📚 References:
 
 Firebase: https://firebase.google.com
 
