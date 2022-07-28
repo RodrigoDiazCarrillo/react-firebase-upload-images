@@ -16,4 +16,4 @@
 
 Firebase: https://firebase.google.com
 
-Firebase Storage: https://firebase.google.com/docs/storage
+Firebase Storage: https://firebase.google.com/docs/storage   
